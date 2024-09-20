@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRBL Robot Rankings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #87CEFA; /* Sky blue background */
+            color: #000; /* Black text color */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #ffffff; /* White header background */
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light grey rows for readability */
+        }
+    </style>
+</head>
+<body>
+    <h1>CRBL Official Rankings</h1>
+    <table id="rankingsTable">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Bot Name</th>
+                <th>Total Events</th>
+		<th>Fights</th>
+                <th>Total Wins</th>
+                <th>Total Losses</th>
+                <th>Win Percentage</th>
+                <th>KO Wins</th>
+                <th>KO Losses</th>
+                <th>Score</th>
+                <th>Awards</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example Row for Pain -->
+            <tr>
+                <td>12</td> <!-- Enter Rank Here -->
+                <td>Pain</td>
+                <td>4</td> <!-- Enter Total Events Here -->
+		<td>18</td> <!-- Enter Total Fights Here -->
+                <td>6</td> <!-- Enter Total Wins Here -->
+                <td>12</td> <!-- Enter Total Losses Here -->
+                <td>33.33%</td> <!-- Enter Win Percentage Here -->
+                <td>3</td> <!-- Enter KO Wins Here -->
+                <td>11</td> <!-- Enter KO Losses Here -->
+                <td>32</td> <!-- Enter Score Here -->
+                <td>CRBL S2 3rd Place</td> <!-- Enter Awards Here -->
+            </tr>
+		<td>35</td> <!-- Enter Rank Here -->
+                <td>Tugboat</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>5</td> <!-- Enter Total Fights Here -->
+                <td>0</td> <!-- Enter Total Wins Here -->
+                <td>5</td> <!-- Enter Total Losses Here -->
+                <td>0.00%</td> <!-- Enter Win Percentage Here -->
+                <td>0</td> <!-- Enter KO Wins Here -->
+                <td>2</td> <!-- Enter KO Losses Here -->
+                <td>3</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>24</td> <!-- Enter Rank Here -->
+                <td>Striker</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>6</td> <!-- Enter Total Fights Here -->
+                <td>3</td> <!-- Enter Total Wins Here -->
+                <td>3</td> <!-- Enter Total Losses Here -->
+                <td>50.00%</td> <!-- Enter Win Percentage Here -->
+                <td>1</td> <!-- Enter KO Wins Here -->
+                <td>1</td> <!-- Enter KO Losses Here -->
+                <td>15</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>3</td> <!-- Enter Rank Here -->
+                <td>Phobos V2</td>
+                <td>2</td> <!-- Enter Total Events Here -->
+		<td>18</td> <!-- Enter Total Fights Here -->
+                <td>12</td> <!-- Enter Total Wins Here -->
+                <td>6</td> <!-- Enter Total Losses Here -->
+                <td>66.67%</td> <!-- Enter Win Percentage Here -->
+                <td>10</td> <!-- Enter KO Wins Here -->
+                <td>1</td> <!-- Enter KO Losses Here -->
+                <td>75</td> <!-- Enter Score Here -->
+                <td>CRBL S2 Champion</td> <!-- Enter Awards Here -->
+            </tr>
+		<td>11</td> <!-- Enter Rank Here -->
+                <td>Papi V2</td>
+                <td>2</td> <!-- Enter Total Events Here -->
+		<td>14</td> <!-- Enter Total Fights Here -->
+                <td>6</td> <!-- Enter Total Wins Here -->
+                <td>8</td> <!-- Enter Total Losses Here -->
+                <td>42.86%</td> <!-- Enter Win Percentage Here -->
+                <td>4</td> <!-- Enter KO Wins Here -->
+                <td>3</td> <!-- Enter KO Losses Here -->
+                <td>33</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>42</td> <!-- Enter Rank Here -->
+                <td>Outrage</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>5</td> <!-- Enter Total Fights Here -->
+                <td>0</td> <!-- Enter Total Wins Here -->
+                <td>5</td> <!-- Enter Total Losses Here -->
+                <td>0.00%</td> <!-- Enter Win Percentage Here -->
+                <td>0</td> <!-- Enter KO Wins Here -->
+                <td>5</td> <!-- Enter KO Losses Here -->
+                <td>0</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>7</td> <!-- Enter Rank Here -->
+                <td>Bruin</td>
+                <td>4</td> <!-- Enter Total Events Here -->
+		<td>21</td> <!-- Enter Total Fights Here -->
+                <td>10</td> <!-- Enter Total Wins Here -->
+                <td>11</td> <!-- Enter Total Losses Here -->
+                <td>47.62%</td> <!-- Enter Win Percentage Here -->
+                <td>6</td> <!-- Enter KO Wins Here -->
+                <td>6</td> <!-- Enter KO Losses Here -->
+                <td>51</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>5</td> <!-- Enter Rank Here -->
+                <td>Biscuit Head</td>
+                <td>2</td> <!-- Enter Total Events Here -->
+		<td>15</td> <!-- Enter Total Fights Here -->
+                <td>9</td> <!-- Enter Total Wins Here -->
+                <td>6</td> <!-- Enter Total Losses Here -->
+                <td>60.00%</td> <!-- Enter Win Percentage Here -->
+                <td>4</td> <!-- Enter KO Wins Here -->
+                <td>3</td> <!-- Enter KO Losses Here -->
+                <td>64</td> <!-- Enter Score Here -->
+                <td>CRBL S2 2nd Place, CRBL S3 3rd Place, CRBL S3 Greatest Design</td> <!-- Enter Awards Here -->
+            </tr>
+		<td>17</td> <!-- Enter Rank Here -->
+                <td>Flakes</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>6</td> <!-- Enter Total Fights Here -->
+                <td>4</td> <!-- Enter Total Wins Here -->
+                <td>2</td> <!-- Enter Total Losses Here -->
+                <td>66.67%</td> <!-- Enter Win Percentage Here -->
+                <td>1</td> <!-- Enter KO Wins Here -->
+                <td>1</td> <!-- Enter KO Losses Here -->
+                <td>18</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>2</td> <!-- Enter Rank Here -->
+                <td>Catastrophe</td>
+                <td>2</td> <!-- Enter Total Events Here -->
+		<td>16</td> <!-- Enter Total Fights Here -->
+                <td>13</td> <!-- Enter Total Wins Here -->
+                <td>3</td> <!-- Enter Total Losses Here -->
+                <td>81.25%</td> <!-- Enter Win Percentage Here -->
+                <td>8</td> <!-- Enter KO Wins Here -->
+                <td>0</td> <!-- Enter KO Losses Here -->
+                <td>107</td> <!-- Enter Score Here -->
+                <td>CRBL S3 2nd Place, CRBL S5 2nd Place</td> <!-- Enter Awards Here -->
+            </tr>
+		<td>8</td> <!-- Enter Rank Here -->
+                <td>Bad Luck</td>
+                <td>3</td> <!-- Enter Total Events Here -->
+		<td>14</td> <!-- Enter Total Fights Here -->
+                <td>6</td> <!-- Enter Total Wins Here -->
+                <td>8</td> <!-- Enter Total Losses Here -->
+                <td>42.86%</td> <!-- Enter Win Percentage Here -->
+                <td>3</td> <!-- Enter KO Wins Here -->
+                <td>5</td> <!-- Enter KO Losses Here -->
+                <td>40</td> <!-- Enter Score Here -->
+                <td>CRBL S4 Most Destructive, CRBL S4 Organizer's Choice</td> <!-- Enter Awards Here -->
+            </tr>
+		<td>29</td> <!-- Enter Rank Here -->
+                <td>Cold Front</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>5</td> <!-- Enter Total Fights Here -->
+                <td>1</td> <!-- Enter Total Wins Here -->
+                <td>4</td> <!-- Enter Total Losses Here -->
+                <td>20.00%</td> <!-- Enter Win Percentage Here -->
+                <td>0</td> <!-- Enter KO Wins Here -->
+                <td>1</td> <!-- Enter KO Losses Here -->
+                <td>7</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>9</td> <!-- Enter Rank Here -->
+                <td>Wheeled Scorpion</td>
+                <td>3</td> <!-- Enter Total Events Here -->
+		<td>16</td> <!-- Enter Total Fights Here -->
+                <td>8</td> <!-- Enter Total Wins Here -->
+                <td>8</td> <!-- Enter Total Losses Here -->
+                <td>50.00%</td> <!-- Enter Win Percentage Here -->
+                <td>4</td> <!-- Enter KO Wins Here -->
+                <td>7</td> <!-- Enter KO Losses Here -->
+                <td>37</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>19</td> <!-- Enter Rank Here -->
+                <td>Deimos</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>6</td> <!-- Enter Total Fights Here -->
+                <td>3</td> <!-- Enter Total Wins Here -->
+                <td>3</td> <!-- Enter Total Losses Here -->
+                <td>50.00%</td> <!-- Enter Win Percentage Here -->
+                <td>3</td> <!-- Enter KO Wins Here -->
+                <td>1</td> <!-- Enter KO Losses Here -->
+                <td>17</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>4</td> <!-- Enter Rank Here -->
+                <td>Impact</td>
+                <td>2</td> <!-- Enter Total Events Here -->
+		<td>12</td> <!-- Enter Total Fights Here -->
+                <td>10</td> <!-- Enter Total Wins Here -->
+                <td>2</td> <!-- Enter Total Losses Here -->
+                <td>83.33%</td> <!-- Enter Win Percentage Here -->
+                <td>5</td> <!-- Enter KO Wins Here -->
+                <td>0</td> <!-- Enter KO Losses Here -->
+                <td>72</td> <!-- Enter Score Here -->
+                <td>CRBL S3 Champion, CRBL S3 Most Destructive</td> <!-- Enter Awards Here -->
+            </tr>
+		<td>33</td> <!-- Enter Rank Here -->
+                <td>Total Disposal</td>
+                <td>2</td> <!-- Enter Total Events Here -->
+		<td>6</td> <!-- Enter Total Fights Here -->
+                <td>1</td> <!-- Enter Total Wins Here -->
+                <td>5</td> <!-- Enter Total Losses Here -->
+                <td>16.67%</td> <!-- Enter Win Percentage Here -->
+                <td>1</td> <!-- Enter KO Wins Here -->
+                <td>5</td> <!-- Enter KO Losses Here -->
+                <td>5</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>25</td> <!-- Enter Rank Here -->
+                <td>Phobos V3</td>
+                <td>2</td> <!-- Enter Total Events Here -->
+		<td>8</td> <!-- Enter Total Fights Here -->
+                <td>2</td> <!-- Enter Total Wins Here -->
+                <td>6</td> <!-- Enter Total Losses Here -->
+                <td>25.00%</td> <!-- Enter Win Percentage Here -->
+                <td>1</td> <!-- Enter KO Wins Here -->
+                <td>4</td> <!-- Enter KO Losses Here -->
+                <td>15</td> <!-- Enter Score Here -->
+                <td>CRBL S4 3rd Place</td> <!-- Enter Awards Here -->
+            </tr>
+		<td>1</td> <!-- Enter Rank Here -->
+                <td>Papi V3</td>
+                <td>2</td> <!-- Enter Total Events Here -->
+		<td>13</td> <!-- Enter Total Fights Here -->
+                <td>13</td> <!-- Enter Total Wins Here -->
+                <td>0</td> <!-- Enter Total Losses Here -->
+                <td>100.00%</td> <!-- Enter Win Percentage Here -->
+                <td>6</td> <!-- Enter KO Wins Here -->
+                <td>0</td> <!-- Enter KO Losses Here -->
+                <td>125</td> <!-- Enter Score Here -->
+                <td>CRBL S4 Champion, CRBL S4 Greatest Design, CRBL S5 Champion</td> <!-- Enter Awards Here -->
+            </tr>
+		<td>10</td> <!-- Enter Rank Here -->
+                <td>Kite</td>
+                <td>2</td> <!-- Enter Total Events Here -->
+		<td>11</td> <!-- Enter Total Fights Here -->
+                <td>5</td> <!-- Enter Total Wins Here -->
+                <td>6</td> <!-- Enter Total Losses Here -->
+                <td>45.45%</td> <!-- Enter Win Percentage Here -->
+                <td>4</td> <!-- Enter KO Wins Here -->
+                <td>3</td> <!-- Enter KO Losses Here -->
+                <td>35</td> <!-- Enter Score Here -->
+                <td>CRBL S4 2nd Place</td> <!-- Enter Awards Here -->
+            </tr>
+		<td>13</td> <!-- Enter Rank Here -->
+                <td>IDC</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>6</td> <!-- Enter Total Fights Here -->
+                <td>5</td> <!-- Enter Total Wins Here -->
+                <td>1</td> <!-- Enter Total Losses Here -->
+                <td>83.33%</td> <!-- Enter Win Percentage Here -->
+                <td>2</td> <!-- Enter KO Wins Here -->
+                <td>0</td> <!-- Enter KO Losses Here -->
+                <td>23</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>27</td> <!-- Enter Rank Here -->
+                <td>Brute</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>4</td> <!-- Enter Total Fights Here -->
+                <td>2</td> <!-- Enter Total Wins Here -->
+                <td>2</td> <!-- Enter Total Losses Here -->
+                <td>50.00%</td> <!-- Enter Win Percentage Here -->
+                <td>0</td> <!-- Enter KO Wins Here -->
+                <td>1</td> <!-- Enter KO Losses Here -->
+                <td>9</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>32</td> <!-- Enter Rank Here -->
+                <td>Wyvern</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>4</td> <!-- Enter Total Fights Here -->
+                <td>1</td> <!-- Enter Total Wins Here -->
+                <td>3</td> <!-- Enter Total Losses Here -->
+                <td>25.00%</td> <!-- Enter Win Percentage Here -->
+                <td>0</td> <!-- Enter KO Wins Here -->
+                <td>2</td> <!-- Enter KO Losses Here -->
+                <td>5</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>28</td> <!-- Enter Rank Here -->
+                <td>Nova</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>4</td> <!-- Enter Total Fights Here -->
+                <td>1</td> <!-- Enter Total Wins Here -->
+                <td>3</td> <!-- Enter Total Losses Here -->
+                <td>25.00%</td> <!-- Enter Win Percentage Here -->
+                <td>1</td> <!-- Enter KO Wins Here -->
+                <td>1</td> <!-- Enter KO Losses Here -->
+                <td>7</td> <!-- Enter Score Here -->
+                <td>CRBL S5 Organizer's Choice</td> <!-- Enter Awards Here -->
+            </tr>
+		<td>15</td> <!-- Enter Rank Here -->
+                <td>Greeble</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>6</td> <!-- Enter Total Fights Here -->
+                <td>5</td> <!-- Enter Total Wins Here -->
+                <td>1</td> <!-- Enter Total Losses Here -->
+                <td>83.33%</td> <!-- Enter Win Percentage Here -->
+                <td>2</td> <!-- Enter KO Wins Here -->
+                <td>1</td> <!-- Enter KO Losses Here -->
+                <td>22</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>38</td> <!-- Enter Rank Here -->
+                <td>Onslaught</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>4</td> <!-- Enter Total Fights Here -->
+                <td>0</td> <!-- Enter Total Wins Here -->
+                <td>4</td> <!-- Enter Total Losses Here -->
+                <td>0.00%</td> <!-- Enter Win Percentage Here -->
+                <td>0</td> <!-- Enter KO Wins Here -->
+                <td>2</td> <!-- Enter KO Losses Here -->
+                <td>2</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>23</td> <!-- Enter Rank Here -->
+                <td>MinoTire</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>5</td> <!-- Enter Total Fights Here -->
+                <td>3</td> <!-- Enter Total Wins Here -->
+                <td>2</td> <!-- Enter Total Losses Here -->
+                <td>60.00%</td> <!-- Enter Win Percentage Here -->
+                <td>1</td> <!-- Enter KO Wins Here -->
+                <td>0</td> <!-- Enter KO Losses Here -->
+                <td>15</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>30</td> <!-- Enter Rank Here -->
+                <td>Controlled Movement</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>4</td> <!-- Enter Total Fights Here -->
+                <td>1</td> <!-- Enter Total Wins Here -->
+                <td>3</td> <!-- Enter Total Losses Here -->
+                <td>25.00%</td> <!-- Enter Win Percentage Here -->
+                <td>0</td> <!-- Enter KO Wins Here -->
+                <td>2</td> <!-- Enter KO Losses Here -->
+                <td>5</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>6</td> <!-- Enter Rank Here -->
+                <td>Drumroll</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>7</td> <!-- Enter Total Fights Here -->
+                <td>6</td> <!-- Enter Total Wins Here -->
+                <td>1</td> <!-- Enter Total Losses Here -->
+                <td>85.71%</td> <!-- Enter Win Percentage Here -->
+                <td>6</td> <!-- Enter KO Wins Here -->
+                <td>0</td> <!-- Enter KO Losses Here -->
+                <td>54</td> <!-- Enter Score Here -->
+                <td>CRBL S5 3rd Place, CRBL S5 Most Destructive</td> <!-- Enter Awards Here -->
+            </tr>
+		<td>39</td> <!-- Enter Rank Here -->
+                <td>Walking Las Vegas</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>4</td> <!-- Enter Total Fights Here -->
+                <td>0</td> <!-- Enter Total Wins Here -->
+                <td>4</td> <!-- Enter Total Losses Here -->
+                <td>0.00%</td> <!-- Enter Win Percentage Here -->
+                <td>0</td> <!-- Enter KO Wins Here -->
+                <td>2</td> <!-- Enter KO Losses Here -->
+                <td>2</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>22</td> <!-- Enter Rank Here -->
+                <td>Deception</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>5</td> <!-- Enter Total Fights Here -->
+                <td>3</td> <!-- Enter Total Wins Here -->
+                <td>2</td> <!-- Enter Total Losses Here -->
+                <td>60.00%</td> <!-- Enter Win Percentage Here -->
+                <td>2</td> <!-- Enter KO Wins Here -->
+                <td>1</td> <!-- Enter KO Losses Here -->
+                <td>15</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>16</td> <!-- Enter Rank Here -->
+                <td>Black Ops</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>6</td> <!-- Enter Total Fights Here -->
+                <td>4</td> <!-- Enter Total Wins Here -->
+                <td>2</td> <!-- Enter Total Losses Here -->
+                <td>66.67%</td> <!-- Enter Win Percentage Here -->
+                <td>3</td> <!-- Enter KO Wins Here -->
+                <td>2</td> <!-- Enter KO Losses Here -->
+                <td>19</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>14</td> <!-- Enter Rank Here -->
+                <td>Meteor</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>7</td> <!-- Enter Total Fights Here -->
+                <td>5</td> <!-- Enter Total Wins Here -->
+                <td>2</td> <!-- Enter Total Losses Here -->
+                <td>71.43%</td> <!-- Enter Win Percentage Here -->
+                <td>2</td> <!-- Enter KO Wins Here -->
+                <td>1</td> <!-- Enter KO Losses Here -->
+                <td>23</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>18</td> <!-- Enter Rank Here -->
+                <td>Pikmin</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>5</td> <!-- Enter Total Fights Here -->
+                <td>3</td> <!-- Enter Total Wins Here -->
+                <td>2</td> <!-- Enter Total Losses Here -->
+                <td>60.00%</td> <!-- Enter Win Percentage Here -->
+                <td>3</td> <!-- Enter KO Wins Here -->
+                <td>0</td> <!-- Enter KO Losses Here -->
+                <td>17</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>41</td> <!-- Enter Rank Here -->
+                <td>Ouch</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>2</td> <!-- Enter Total Fights Here -->
+                <td>0</td> <!-- Enter Total Wins Here -->
+                <td>2</td> <!-- Enter Total Losses Here -->
+                <td>0.00%</td> <!-- Enter Win Percentage Here -->
+                <td>0</td> <!-- Enter KO Wins Here -->
+                <td>2</td> <!-- Enter KO Losses Here -->
+                <td>0</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>31</td> <!-- Enter Rank Here -->
+                <td>Helios</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>4</td> <!-- Enter Total Fights Here -->
+                <td>1</td> <!-- Enter Total Wins Here -->
+                <td>3</td> <!-- Enter Total Losses Here -->
+                <td>25.00%</td> <!-- Enter Win Percentage Here -->
+                <td>0</td> <!-- Enter KO Wins Here -->
+                <td>2</td> <!-- Enter KO Losses Here -->
+                <td>5</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>20</td> <!-- Enter Rank Here -->
+                <td>Cataclysm</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>5</td> <!-- Enter Total Fights Here -->
+                <td>3</td> <!-- Enter Total Wins Here -->
+                <td>2</td> <!-- Enter Total Losses Here -->
+                <td>60.00%</td> <!-- Enter Win Percentage Here -->
+                <td>2</td> <!-- Enter KO Wins Here -->
+                <td>0</td> <!-- Enter KO Losses Here -->
+                <td>16</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>21</td> <!-- Enter Rank Here -->
+                <td>Crabvergent</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>5</td> <!-- Enter Total Fights Here -->
+                <td>2</td> <!-- Enter Total Wins Here -->
+                <td>3</td> <!-- Enter Total Losses Here -->
+                <td>40.00%</td> <!-- Enter Win Percentage Here -->
+                <td>1</td> <!-- Enter KO Wins Here -->
+                <td>3</td> <!-- Enter KO Losses Here -->
+                <td>16</td> <!-- Enter Score Here -->
+                <td>CRBL S5 Greatest Design</td> <!-- Enter Awards Here -->
+            </tr>
+		<td>36</td> <!-- Enter Rank Here -->
+                <td>G-Force</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>4</td> <!-- Enter Total Fights Here -->
+                <td>0</td> <!-- Enter Total Wins Here -->
+                <td>4</td> <!-- Enter Total Losses Here -->
+                <td>0.00%</td> <!-- Enter Win Percentage Here -->
+                <td>0</td> <!-- Enter KO Wins Here -->
+                <td>3</td> <!-- Enter KO Losses Here -->
+                <td>2.99</td> <!-- Enter Score Here -->
+                <td>CRBL S5 Most Destroyed</td> <!-- Enter Awards Here -->
+            </tr>
+		<td>37</td> <!-- Enter Rank Here -->
+                <td>IDK</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>4</td> <!-- Enter Total Fights Here -->
+                <td>0</td> <!-- Enter Total Wins Here -->
+                <td>4</td> <!-- Enter Total Losses Here -->
+                <td>0.00%</td> <!-- Enter Win Percentage Here -->
+                <td>0</td> <!-- Enter KO Wins Here -->
+                <td>2</td> <!-- Enter KO Losses Here -->
+                <td>2</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>26</td> <!-- Enter Rank Here -->
+                <td>The Three Amigos</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>4</td> <!-- Enter Total Fights Here -->
+                <td>2</td> <!-- Enter Total Wins Here -->
+                <td>2</td> <!-- Enter Total Losses Here -->
+                <td>50.00%</td> <!-- Enter Win Percentage Here -->
+                <td>1</td> <!-- Enter KO Wins Here -->
+                <td>0</td> <!-- Enter KO Losses Here -->
+                <td>11</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>31</td> <!-- Enter Rank Here -->
+                <td>Uppercut</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>4</td> <!-- Enter Total Fights Here -->
+                <td>1</td> <!-- Enter Total Wins Here -->
+                <td>3</td> <!-- Enter Total Losses Here -->
+                <td>25.00%</td> <!-- Enter Win Percentage Here -->
+                <td>1</td> <!-- Enter KO Wins Here -->
+                <td>3</td> <!-- Enter KO Losses Here -->
+                <td>5</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		<td>40</td> <!-- Enter Rank Here -->
+                <td>Rupture</td>
+                <td>1</td> <!-- Enter Total Events Here -->
+		<td>2</td> <!-- Enter Total Fights Here -->
+                <td>0</td> <!-- Enter Total Wins Here -->
+                <td>2</td> <!-- Enter Total Losses Here -->
+                <td>0.00%</td> <!-- Enter Win Percentage Here -->
+                <td>0</td> <!-- Enter KO Wins Here -->
+                <td>1</td> <!-- Enter KO Losses Here -->
+                <td>1</td> <!-- Enter Score Here -->
+                <td></td> <!-- Enter Awards Here -->
+            </tr>
+		
+
+            <!-- Add more rows here with the same format -->
+        </tbody>
+    </table>
+    
+    <script>
+        function sortTableByRank() {
+            var table = document.getElementById("rankingsTable");
+            var rows = Array.from(table.getElementsByTagName("tbody")[0].getElementsByTagName("tr"));
+            
+            rows.sort(function(a, b) {
+                var rankA = parseInt(a.getElementsByTagName("td")[0].textContent);
+                var rankB = parseInt(b.getElementsByTagName("td")[0].textContent);
+                return rankA - rankB;
+            });
+            
+            var tbody = table.getElementsByTagName("tbody")[0];
+            tbody.innerHTML = ""; // Clear the existing rows
+            rows.forEach(function(row) {
+                tbody.appendChild(row); // Append rows in sorted order
+            });
+        }
+
+        window.onload = sortTableByRank; // Sort table when page loads
+    </script>
+</body>
+</html>
